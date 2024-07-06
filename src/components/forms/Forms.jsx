@@ -3,14 +3,14 @@ import { useState } from "react";
 export default function Forms(){
 const [text,setText] = useState("");
 const handler = (event)=>{
-    event.preventDefault();
-    debugger; 
     const firstname = document.getElementById("firstname").value;
     const lastname = document.getElementById("lastname").value;
-    if(!firstname || !lastname)
-       setText("");
-    else
-    setText(`Full Name: ${firstname} ${lastname}`);
+    if(!firstname || !lastname){
+        setText("");
+    }
+    else{
+        setText(`Full Name: ${firstname} ${lastname}`);
+    }
 }
     return(
         <form>
