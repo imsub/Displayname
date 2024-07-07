@@ -14,7 +14,8 @@ const handler = (event)=>{
     }
 }
     return(
-        <form>
+        <div>
+         <form>
             <div>
                 <label>FirstName:</label>
                 <input type="text" id="firstname" name="firstname" required={true}/>
@@ -27,8 +28,10 @@ const handler = (event)=>{
                 <button type="submit" onClick={handler}>Submit</button>
             </div>
             <br/>
-            <p id="text">{text}</p>
         </form>
+
+        <p id="text">{text}</p>
+        </div>
     )
 
 }
