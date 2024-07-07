@@ -16,21 +16,16 @@ const handler = (event)=>{
     return(
         <div>
          <form>
-            <div>
+                <h1>Full Name Display</h1>
                 <label>FirstName:</label>
                 <input type="text" id="firstname" name="firstname" required={true}/>
-            </div>
-            <div>
+                <br/>
                 <label>LastName:</label>
                 <input type="text" id="lastname" name="lastname" required={true}/>
-            </div>
-            <div>
+                <br/>
                 <button type="submit" onClick={handler}>Submit</button>
-            </div>
-            <br/>
+                <p>{text}</p>
         </form>
-
-        {text}
         </div>
     )
 
