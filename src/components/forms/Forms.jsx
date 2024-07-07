@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function Forms(){
 const [text,setText] = useState("");
 const handler = (event)=>{
+    event.preventDefault();
     const firstname = document.getElementById("firstname").value;
     const lastname = document.getElementById("lastname").value;
     if(!firstname || !lastname){
