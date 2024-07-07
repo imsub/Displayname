@@ -10,7 +10,7 @@ const handler = (event)=>{
         setText("");
     }
     else{
-        setText(`Full Name: ${firstname} ${lastname}`);
+        setText(`<p>Full Name: ${firstname} ${lastname}</p>`);
     }
 }
     return(
@@ -30,7 +30,7 @@ const handler = (event)=>{
             <br/>
         </form>
 
-        <p id="text">{text}</p>
+        {text}
         </div>
     )
 
